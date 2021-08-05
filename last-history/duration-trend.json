@@ -1,3 +1,6 @@
 [ {
+  "buildOrder" : 3,
+  "reportUrl" : "https://gizmoka.github.io/conduit/3/",
+  "reportName" : "Allure Report with history",
   "data" : { }
 } ]
