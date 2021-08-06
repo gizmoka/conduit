@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-def homepage():
+def test_homepage():
     browser_options = Options()
     browser_options.headless = True
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
