@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "test-conduit",
+    "children" : [ {
+      "name" : "test_homepage",
+      "children" : [ {
+        "name" : "test_homepage",
+        "uid" : "3cf26314f45e9853",
+        "parentUid" : "5620cd6d8a582d04cc331631b6a54ab7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628241238074,
+          "stop" : 1628241248062,
+          "duration" : 9988
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5620cd6d8a582d04cc331631b6a54ab7"
+    } ],
+    "uid" : "fcfe970ddd9021dcedddf034c326e02c"
+  } ],
+  "name" : "suites"
+}
