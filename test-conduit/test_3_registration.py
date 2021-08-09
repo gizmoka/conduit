@@ -5,7 +5,6 @@ from selenium import webdriver
 from datetime import datetime, timezone
 from data import accepting_cookies
 
-
 def test_registration():
     browser_options = Options()
     browser_options.headless = True
@@ -18,7 +17,9 @@ def test_registration():
     accepting_cookies(browser)
 
     # TC3: Regisztráció
-    browser.find_element_by_xpath('//a[@href="#/register"]').click()
+    register_button = browser.find_element_by_xpath('//a[@href="#/register"]')
+    time.sleep(2)
+    register_button.click()
 
     username_input = browser.find_element_by_xpath('//input[@placeholder="Username"]')
     email_input = browser.find_element_by_xpath('//input[@placeholder="Email"]')
@@ -30,9 +31,11 @@ def test_registration():
     username_input.send_keys(dynamic_variable)
     email_input.send_keys(dynamic_email)
     password_input.send_keys("Adminka01,")
+
     sending_data = browser.find_element_by_css_selector('button.btn.btn-lg.btn-primary.pull-xs-right')
     sending_data.click()
     time.sleep(3)
+
     successful_registration_message = browser.find_element_by_css_selector('div.swal-text').text
     assert  successful_registration_message == "Your registration was successful!"
     browser.find_element_by_xpath("//button[normalize-space()='OK']").click()

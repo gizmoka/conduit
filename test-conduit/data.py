@@ -1,7 +1,8 @@
 import time
 
 def accepting_cookies(browser):
-    browser.find_element_by_xpath("//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--accept']").click()
+    accept_cookies_button = browser.find_element_by_xpath("//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--accept']")
+    accept_cookies_button.click()
 
 def conduit_registration(browser):
     browser.find_element_by_xpath('//a[@href="#/register"]').click()
@@ -11,7 +12,7 @@ def conduit_registration(browser):
     username_input.send_keys("GumiBogyo")
     email_input.send_keys("gumibogyo@gmail.com")
     password_input.send_keys("GumiBogyo01")
-    time.sleep(6)
+    time.sleep(7)
     browser.find_element_by_css_selector('button.btn.btn-lg.btn-primary.pull-xs-right').click()
 
 def conduit_login(browser):
@@ -45,4 +46,6 @@ def create_new_article(browser):
     publish_article_button.click()
 
 def conduit_logout(browser):
-    browser.find_element_by_css_selector("a[active-class='active']".click()
+    logout_button = browser.find_element_by_xpath("//a[@active-class='active'] and [@class='nav-link']")
+    logout_button.click()
+

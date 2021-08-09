@@ -22,7 +22,6 @@ def test_login():
     # TC4: Belépés
     sign_in_button = browser.find_element_by_xpath('//a[normalize-space()="Sign in"]')
     sign_in_button.click()
-
     email_input = browser.find_element_by_css_selector('input[placeholder="Email"]')
     password_input = browser.find_element_by_css_selector('input[placeholder="Password"]')
     email_input.send_keys("gumibogyo@gmail.com")
@@ -38,4 +37,3 @@ def test_login():
     print("Conclusion: The login proccess is done properly.")
 
     browser.quit()
-
