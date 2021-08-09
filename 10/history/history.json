@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3cf26314f45e9853",
-      "reportUrl" : "https://gizmoka.github.io/conduit/9//#testresult/3cf26314f45e9853",
+      "uid" : "9bd4ed7c28b8716",
+      "reportUrl" : "https://gizmoka.github.io/conduit/10//#testresult/9bd4ed7c28b8716",
       "status" : "passed",
       "time" : {
-        "start" : 1628241238074,
-        "stop" : 1628241248062,
-        "duration" : 9988
+        "start" : 1628507008794,
+        "stop" : 1628507012389,
+        "duration" : 3595
       }
     } ]
   }
