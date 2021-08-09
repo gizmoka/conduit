@@ -1,8 +1,6 @@
 [ {
-  "buildOrder" : 14,
-  "reportUrl" : "https://gizmoka.github.io/conduit/14/",
+  "buildOrder" : 15,
+  "reportUrl" : "https://gizmoka.github.io/conduit/15/",
   "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 12395
-  }
+  "data" : { }
 } ]
