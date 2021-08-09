@@ -1,7 +1,13 @@
 import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 def accepting_cookies(browser):
-    accept_cookies_button = browser.find_element_by_xpath("//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--accept']")
+    #wait = WebDriverWait(browser, 5)
+    # accept_cookies_button = wait.until(EC.visibility_of_element_located((By.XPATH, "//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--accept']")))
+    # accept_cookies_button = browser.find_element_by_xpath('//button[contains(@class, "accept")]')
+    accept_cookies_button = browser.find_element_by_xpath('//button[@class="cookie__bar__buttons__button cookie__bar__buttons__button--accept"]')
     accept_cookies_button.click()
 
 def conduit_registration(browser):
@@ -46,6 +52,8 @@ def create_new_article(browser):
     publish_article_button.click()
 
 def conduit_logout(browser):
-    logout_button = browser.find_element_by_xpath("//a[@active-class='active'] and [@class='nav-link']")
+    # logout_button = browser.find_element_by_xpath("//a[@active-class='active']")
+    # logout_button = browser.find_element_by_xpath("//a[@active-class='active'][@class='nav-link']")
+    logout_button = browser.find_element_by_xpath('//a[contains(text(),"Log out")]')
     logout_button.click()
 
