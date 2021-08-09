@@ -39,5 +39,3 @@ def test_registration():
     print("Congrats! Your registration has been successful.")
 
     browser.quit()
-
-

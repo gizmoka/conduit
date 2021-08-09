@@ -24,9 +24,6 @@ def conduit_login(browser):
     button = browser.find_element_by_css_selector('button.btn.btn-lg.btn-primary.pull-xs-right')
     browser.execute_script('arguments[0].click()', button)
 
-def conduit_logout(browser):
-    browser.find_element_by_css_selector("a[active-class='active']".click()
-
 def create_new_article(browser):
     # elnavigálunk a 'new article' oldalra
     browser.find_element_by_css_selector("a[href='#/editor']").click()
@@ -46,3 +43,6 @@ def create_new_article(browser):
 
     publish_article_button = browser.find_element_by_css_selector("button[type='submit']")
     publish_article_button.click()
+
+def conduit_logout(browser):
+    browser.find_element_by_css_selector("a[active-class='active']".click()
