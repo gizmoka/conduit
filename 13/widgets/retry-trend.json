@@ -1,9 +1,0 @@
-[ {
-  "buildOrder" : 13,
-  "reportUrl" : "https://gizmoka.github.io/conduit/13/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 3,
-    "retry" : 0
-  }
-} ]
