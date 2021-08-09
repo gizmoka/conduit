@@ -1,3 +1,4 @@
+import pytest
 from selenium import webdriver
 from data import accepting_cookies
 from selenium.webdriver.chrome.options import Options
@@ -16,6 +17,8 @@ def test_cookies():
 
     # Nem maradt megnyomható gomb az oldalon, miután elfogadtuk a cookies policy-t, erre assertezni
     # assert browser.find_elements_by_xpath("//button") == []
+    with pytest.raises(NoSuchElementException):
+        browser.find_element_by_xpath('//button')
     print("Cookies policy buttons have disappeared from the homepage. So, I accept! button is working properly.")
     browser.quit()
 

@@ -1,8 +1,7 @@
 import time
 
 def accepting_cookies(browser):
-    accept_button = browser.find_element_by_xpath(
-        "//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--accept']").click()
+    browser.find_element_by_xpath("//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--accept']").click()
 
 def conduit_registration(browser):
     browser.find_element_by_xpath('//a[@href="#/register"]').click()
@@ -25,6 +24,8 @@ def conduit_login(browser):
     button = browser.find_element_by_css_selector('button.btn.btn-lg.btn-primary.pull-xs-right')
     browser.execute_script('arguments[0].click()', button)
 
+def conduit_logout(browser):
+    browser.find_element_by_css_selector("a[active-class='active']".click()
 
 def create_new_article(browser):
     # elnavigálunk a 'new article' oldalra
