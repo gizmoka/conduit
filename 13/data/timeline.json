@@ -1,0 +1,52 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az74-184",
+    "children" : [ {
+      "name" : "3713-MainThread",
+      "children" : [ {
+        "name" : "test_cookies",
+        "uid" : "7bfbfaa18033f79b",
+        "parentUid" : "f754bfa4c08db92a52aef48104f69d20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628509567019,
+          "stop" : 1628509579457,
+          "duration" : 12438
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_registration",
+        "uid" : "9345e5f1290ff6d1",
+        "parentUid" : "f754bfa4c08db92a52aef48104f69d20",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628509579461,
+          "stop" : 1628509581486,
+          "duration" : 2025
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_homepage",
+        "uid" : "ed32d34e6fc4b5d9",
+        "parentUid" : "f754bfa4c08db92a52aef48104f69d20",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628509581527,
+          "stop" : 1628509584025,
+          "duration" : 2498
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f754bfa4c08db92a52aef48104f69d20"
+    } ],
+    "uid" : "c6623b41dfcd79e5cb92252f3960b300"
+  } ],
+  "name" : "timeline"
+}
