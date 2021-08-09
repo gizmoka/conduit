@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1cfe24acb6ce9190",
-      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/1cfe24acb6ce9190",
+      "uid" : "52c9d0e946761229",
+      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/52c9d0e946761229",
       "status" : "passed",
       "time" : {
-        "start" : 1628533710387,
-        "stop" : 1628533717718,
-        "duration" : 7331
+        "start" : 1628535042268,
+        "stop" : 1628535050689,
+        "duration" : 8421
       }
     } ]
   },
@@ -29,13 +29,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "bc758327ea26dbee",
-      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/bc758327ea26dbee",
+      "uid" : "3c61ec62f151f7e5",
+      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/3c61ec62f151f7e5",
       "status" : "passed",
       "time" : {
-        "start" : 1628533695190,
-        "stop" : 1628533707848,
-        "duration" : 12658
+        "start" : 1628535029400,
+        "stop" : 1628535040705,
+        "duration" : 11305
       }
     } ]
   },
@@ -49,13 +49,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6edcc7181450ac73",
-      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/6edcc7181450ac73",
+      "uid" : "51d10d5aa0134fc9",
+      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/51d10d5aa0134fc9",
       "status" : "passed",
       "time" : {
-        "start" : 1628533707851,
-        "stop" : 1628533710384,
-        "duration" : 2533
+        "start" : 1628535040709,
+        "stop" : 1628535042264,
+        "duration" : 1555
       }
     } ]
   },
@@ -69,14 +69,14 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "d8c50963e66256ba",
-      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/d8c50963e66256ba",
+      "uid" : "a40b18452bfdaff2",
+      "reportUrl" : "https://gizmoka.github.io/conduit/16//#testresult/a40b18452bfdaff2",
       "status" : "broken",
       "statusDetails" : "selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[@active-class='active'] and [@class='nav-link'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@active-class='active'] and [@class='nav-link']' is not a valid XPath expression.\n  (Session info: headless chrome=92.0.4515.131)",
       "time" : {
-        "start" : 1628533717725,
-        "stop" : 1628533727604,
-        "duration" : 9879
+        "start" : 1628535050693,
+        "stop" : 1628535060483,
+        "duration" : 9790
       }
     } ]
   }

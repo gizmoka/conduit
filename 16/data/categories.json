@@ -6,13 +6,13 @@
       "name" : "selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //a[@active-class='active'] and [@class='nav-link'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[@active-class='active'] and [@class='nav-link']' is not a valid XPath expression.\n  (Session info: headless chrome=92.0.4515.131)",
       "children" : [ {
         "name" : "test_login",
-        "uid" : "d8c50963e66256ba",
+        "uid" : "a40b18452bfdaff2",
         "parentUid" : "c386ae84b08d93e181f55d18d6be366d",
         "status" : "broken",
         "time" : {
-          "start" : 1628533717725,
-          "stop" : 1628533727604,
-          "duration" : 9879
+          "start" : 1628535050693,
+          "stop" : 1628535060483,
+          "duration" : 9790
         },
         "flaky" : false,
         "newFailed" : false,
