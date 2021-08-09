@@ -1,0 +1,47 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "test-conduit",
+    "children" : [ {
+      "name" : "test_homepage",
+      "children" : [ {
+        "name" : "test_homepage",
+        "uid" : "e45c0d073294c442",
+        "parentUid" : "5620cd6d8a582d04cc331631b6a54ab7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628507290566,
+          "stop" : 1628507295116,
+          "duration" : 4550
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5620cd6d8a582d04cc331631b6a54ab7"
+    } ],
+    "uid" : "fcfe970ddd9021dcedddf034c326e02c"
+  }, {
+    "name" : "test-conduit.atmeneti-konyvtar",
+    "children" : [ {
+      "name" : "test_2_cookies_policy",
+      "children" : [ {
+        "name" : "test_cookies",
+        "uid" : "a127ad018c574353",
+        "parentUid" : "285aa7f5db91221b6387c062815c247a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628507295120,
+          "stop" : 1628507306692,
+          "duration" : 11572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "285aa7f5db91221b6387c062815c247a"
+    } ],
+    "uid" : "4ca36dcc6ad4391eb8923f3454fdf8f8"
+  } ],
+  "name" : "suites"
+}

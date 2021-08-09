@@ -1,0 +1,1 @@
+Cookies policy buttons have disappeared from the homepage. So, I accept! button is working properly.

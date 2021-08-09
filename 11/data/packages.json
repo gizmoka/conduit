@@ -1,0 +1,43 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test-conduit",
+    "children" : [ {
+      "name" : "test_homepage",
+      "children" : [ {
+        "name" : "test_homepage",
+        "uid" : "e45c0d073294c442",
+        "parentUid" : "41a18891b6d6506df4de824a463b23b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628507290566,
+          "stop" : 1628507295116,
+          "duration" : 4550
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "41a18891b6d6506df4de824a463b23b3"
+    }, {
+      "name" : "atmeneti-konyvtar.test_2_cookies_policy",
+      "children" : [ {
+        "name" : "test_cookies",
+        "uid" : "a127ad018c574353",
+        "parentUid" : "53052bfeb2cd9937033fdbaaea14f977",
+        "status" : "passed",
+        "time" : {
+          "start" : 1628507295120,
+          "stop" : 1628507306692,
+          "duration" : 11572
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "atmeneti-konyvtar.test_2_cookies_policy"
+    } ],
+    "uid" : "da0d08acd0c8493c2f79e82e7a0e49f4"
+  } ],
+  "name" : "packages"
+}
