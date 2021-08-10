@@ -22,6 +22,5 @@ def test_cookies():
     #     browser.find_element_by_xpath('//button')
     with pytest.raises(NoSuchElementException):
         browser.find_element_by_xpath("//a[contains(text(),'Log out')]")
-
     print("Cookies policy buttons have disappeared from the homepage. So, I accept! button is working properly.")
     browser.quit()

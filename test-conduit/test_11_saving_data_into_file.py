@@ -17,7 +17,7 @@ def test_lementes_feluletrol():
     accepting_cookies(browser)
     # conduit_registration(browser)
     conduit_login(browser)
-
+    time.sleep(2)
     # TC08: Adatok listázása, blogpostok listázása
 
     # a saját blogpostokat megkeresem

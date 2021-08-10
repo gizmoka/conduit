@@ -16,6 +16,7 @@ def test_delete_article():
     accepting_cookies(browser)
     # conduit_registration(browser)
     conduit_login(browser)
+    time.sleep(2)
     create_new_article(browser)
 
     # 1 blogpost törlése
@@ -23,7 +24,7 @@ def test_delete_article():
     delete_article_button.click()
     # url_before_deletion = "http://conduitapp.progmasters.hu:1667/#/articles/new-title"
     url_after_deletion = "http://conduitapp.progmasters.hu:1667/#/"
-    browser.refresh()
+    # browser.refresh()
     time.sleep(7)
     assert browser.current_url == url_after_deletion
     print("Deleting this blogpost was a successful action.")

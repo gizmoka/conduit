@@ -1,14 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-from data import accepting_cookies, conduit_login, conduit_registration
+from data import *
 
-
+URL = "http://conduitapp.progmasters.hu:1667/#/"
 def test_add_new_article():
     browser_options = Options()
     browser_options.headless = True
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
-    URL = "http://conduitapp.progmasters.hu:1667/#/"
     browser.get(URL)
     browser.implicitly_wait(10)
 
@@ -16,7 +15,7 @@ def test_add_new_article():
     accepting_cookies(browser)
     # conduit_registration(browser)
     conduit_login(browser)
-
+    time.sleep(2)
 
     # TC6: 1 blogpost létrehozása
 
