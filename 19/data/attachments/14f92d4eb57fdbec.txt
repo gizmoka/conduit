@@ -1,0 +1,1 @@
+New published article has been found on this site. So, adding new article functin works fine.
