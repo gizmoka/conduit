@@ -17,6 +17,7 @@ def test_modify_article():
     accepting_cookies(browser)
     # conduit_registration(browser)
     conduit_login(browser)
+    time.sleep(2)
     create_new_article(browser)
 
     # TC06: Meglévő blogpost szerkesztése

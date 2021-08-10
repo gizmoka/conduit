@@ -3,14 +3,18 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 def accepting_cookies(browser):
+    time.sleep(2)
     #wait = WebDriverWait(browser, 5)
     # accept_cookies_button = wait.until(EC.visibility_of_element_located((By.XPATH, "//button[@class='cookie__bar__buttons__button cookie__bar__buttons__button--accept']")))
     # accept_cookies_button = browser.find_element_by_xpath('//button[contains(@class, "accept")]')
     accept_cookies_button = browser.find_element_by_xpath('//button[@class="cookie__bar__buttons__button cookie__bar__buttons__button--accept"]')
     accept_cookies_button.click()
 
+
 def conduit_registration(browser):
+    time.sleep(2)
     browser.find_element_by_xpath('//a[@href="#/register"]').click()
     username_input = browser.find_element_by_xpath('//input[@placeholder="Username"]')
     email_input = browser.find_element_by_xpath('//input[@placeholder="Email"]')
@@ -21,7 +25,9 @@ def conduit_registration(browser):
     time.sleep(7)
     browser.find_element_by_css_selector('button.btn.btn-lg.btn-primary.pull-xs-right').click()
 
+
 def conduit_login(browser):
+    time.sleep(2)
     browser.find_element_by_xpath('//a[normalize-space()="Sign in"]').click()
     email_input = browser.find_element_by_css_selector('input[placeholder="Email"]')
     password_input = browser.find_element_by_css_selector('input[placeholder="Password"]')
@@ -30,6 +36,7 @@ def conduit_login(browser):
     time.sleep(6)
     button = browser.find_element_by_css_selector('button.btn.btn-lg.btn-primary.pull-xs-right')
     browser.execute_script('arguments[0].click()', button)
+
 
 def create_new_article(browser):
     # elnavigálunk a 'new article' oldalra
@@ -50,6 +57,7 @@ def create_new_article(browser):
 
     publish_article_button = browser.find_element_by_css_selector("button[type='submit']")
     publish_article_button.click()
+
 
 def conduit_logout(browser):
     # logout_button = browser.find_element_by_xpath("//a[@active-class='active']")

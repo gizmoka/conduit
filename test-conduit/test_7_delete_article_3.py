@@ -16,6 +16,7 @@ def test_delete_article():
     accepting_cookies(browser)
     # conduit_registration(browser)
     conduit_login(browser)
+    time.sleep(2)
     create_new_article(browser)
 
     # 1 blogpost törlése

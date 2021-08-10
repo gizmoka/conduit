@@ -17,7 +17,7 @@ def test_data_input_from_file():
     accepting_cookies(browser)
     # conduit_registration(browser)
     conduit_login(browser)
-
+    time.sleep(2)
     # TC4: Ismételt és sorozatos adatbevitel adatforrásból, 1 blogpost feltöltése betöltése txt fájlból
     ## step1: new article-ra rákattintunk
     browser.find_element_by_css_selector("a[href='#/editor']").click()

@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 from data import accepting_cookies, conduit_login, conduit_registration
 from selenium.webdriver.chrome.options import Options
@@ -16,7 +18,7 @@ def test_pagination():
     accepting_cookies(browser)
     # conduit_registration(browser)
     conduit_login(browser)
-
+    time.sleep(2)
     # Lapozás (global feed-en)
     pagination_page_1 = browser.find_element_by_xpath("//a[normalize-space()='1']")
     pagination_page_1.click()
