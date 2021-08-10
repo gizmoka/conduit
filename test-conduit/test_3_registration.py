@@ -37,7 +37,7 @@ def test_registration():
     time.sleep(3)
 
     successful_registration_message = browser.find_element_by_css_selector('div.swal-text').text
-    assert  successful_registration_message == "Your registration was successful!"
+    assert successful_registration_message == "Your registration was successful!"
     browser.find_element_by_xpath("//button[normalize-space()='OK']").click()
     print("Congrats! Your registration has been successful.")
 

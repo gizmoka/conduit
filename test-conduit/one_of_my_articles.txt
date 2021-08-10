@@ -1,2 +1,2 @@
-An awesome title for my article
-The gist of this article
+Lorem ipsum dolor sit amet
+consectetur adipiscing elit

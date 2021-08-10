@@ -1,10 +1,9 @@
 import pytest
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
-
-from data import accepting_cookies
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
+from data import accepting_cookies
 
 def test_cookies():
     browser_options = Options()
@@ -21,5 +20,8 @@ def test_cookies():
     # assert browser.find_elements_by_xpath("//button") == []
     # with pytest.raises(NoSuchElementException):
     #     browser.find_element_by_xpath('//button')
+    with pytest.raises(NoSuchElementException):
+        browser.find_element_by_xpath("//a[contains(text(),'Log out')]")
+
     print("Cookies policy buttons have disappeared from the homepage. So, I accept! button is working properly.")
     browser.quit()

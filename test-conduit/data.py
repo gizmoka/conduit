@@ -56,4 +56,6 @@ def conduit_logout(browser):
     # logout_button = browser.find_element_by_xpath("//a[@active-class='active'][@class='nav-link']")
     logout_button = browser.find_element_by_xpath('//a[contains(text(),"Log out")]')
     logout_button.click()
+    browser.refresh()
+
 
