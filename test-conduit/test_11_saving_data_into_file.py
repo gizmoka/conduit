@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import os
 
+
 def test_lementes_feluletrol():
     browser_options = Options()
     browser_options.headless = True

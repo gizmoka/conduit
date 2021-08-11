@@ -6,6 +6,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from data import accepting_cookies
 import time
 
+
 def test_cookies():
     browser_options = Options()
     browser_options.headless = True
@@ -16,7 +17,7 @@ def test_cookies():
 
     # ~ ~ ~ ~ ~ TC-02: COOKIES POLICY ELFOGADÁSA ~ ~ ~ ~ ~ #
     accepting_cookies(browser)
-    time.sleep (2)
+    time.sleep(2)
 
     # Assert: I accept! gomb nem található az oldalon
     with pytest.raises(NoSuchElementException):
@@ -25,4 +26,3 @@ def test_cookies():
         # print("Cookies policy buttons have disappeared from the homepage. So, I accept! button is working properly.")
 
     browser.quit()
-

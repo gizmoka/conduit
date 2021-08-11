@@ -16,6 +16,7 @@ def test_registration():
 
     # Előfeltételek
     accepting_cookies(browser)
+    time.sleep(7)
 
     # ~ ~ ~ ~ ~ TC-03: REGISZTRÁCIÓ ~ ~ ~ ~ ~ #
     register_button = browser.find_element_by_xpath('//a[@href="#/register"]')

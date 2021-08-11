@@ -4,6 +4,7 @@ from data import conduit_login, accepting_cookies, conduit_registration
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
+
 def test_list_data():
     browser_options = Options()
     browser_options.headless = True
@@ -34,6 +35,7 @@ def test_list_data():
     for article in article_preview_bodies:
         articles_list.append(article.text + '\n')
 
+    time.sleep(2)
     with open('articles_list.txt', 'a', encoding='utf-8') as artlist:
         for element in articles_list:
             artlist.write(element)

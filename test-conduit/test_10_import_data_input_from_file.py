@@ -5,9 +5,10 @@ from data import accepting_cookies, conduit_login, conduit_registration
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
+
 def test_data_input_from_file():
     browser_options = Options()
-    browser_options.headless = False
+    browser_options.headless = True
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
     URL = "http://conduitapp.progmasters.hu:1667/#/"
     browser.get(URL)

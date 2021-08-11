@@ -5,6 +5,8 @@ from data import *
 import time
 
 URL = "http://conduitapp.progmasters.hu:1667/#/"
+
+
 def test_add_new_article():
     browser_options = Options()
     browser_options.headless = True
@@ -45,4 +47,3 @@ def test_add_new_article():
     # print("New published article has been found on this site. So, adding new article functin works fine.")
 
     browser.quit()
-

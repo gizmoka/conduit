@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from data import accepting_cookies, conduit_login, conduit_logout
 
+
 def test_login():
     browser_options = Options()
     browser_options.headless = True

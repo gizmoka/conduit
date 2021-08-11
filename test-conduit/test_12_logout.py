@@ -6,11 +6,12 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from data import accepting_cookies, conduit_login, conduit_registration
 
-URL = "http://conduitapp.progmasters.hu:1667/#/"
+
 def test_logout():
     browser_options = Options()
     browser_options.headless = True
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
+    URL = "http://conduitapp.progmasters.hu:1667/#/"
     browser.get(URL)
     browser.implicitly_wait(10)
 
@@ -29,4 +30,3 @@ def test_logout():
     # print("Log out link is no more available. So, you have succesfully logged out from this website.\nHave a nice day! ")
 
     browser.quit()
-

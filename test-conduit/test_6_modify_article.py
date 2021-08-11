@@ -37,4 +37,3 @@ def test_modify_article():
     # print("The article's body has been changed.")
 
     browser.quit()
-

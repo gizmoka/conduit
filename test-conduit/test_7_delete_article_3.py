@@ -4,6 +4,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from data import accepting_cookies, conduit_login, create_new_article, conduit_registration
 import time
 
+
 def test_delete_article():
     browser_options = Options()
     browser_options.headless = True
@@ -32,5 +33,3 @@ def test_delete_article():
     # print("Deleting this blogpost was a successful action. Congrats.")
 
     browser.quit()
-
-
