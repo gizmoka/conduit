@@ -1,0 +1,121 @@
+[ {
+  "uid" : "8386346600479399",
+  "name" : "test_logout",
+  "time" : {
+    "start" : 1628711845217,
+    "stop" : 1628711875055,
+    "duration" : 29838
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6124057b7457939a",
+  "name" : "test_homepage",
+  "time" : {
+    "start" : 1628711875058,
+    "stop" : 1628711877519,
+    "duration" : 2461
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8754779592a52688",
+  "name" : "test_add_new_article",
+  "time" : {
+    "start" : 1628711946783,
+    "stop" : 1628711968166,
+    "duration" : 21383
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "367e7e97d6c693bc",
+  "name" : "test_data_input_from_file",
+  "time" : {
+    "start" : 1628711776056,
+    "stop" : 1628711812232,
+    "duration" : 36176
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "224364e63933192d",
+  "name" : "test_list_data",
+  "time" : {
+    "start" : 1628712049707,
+    "stop" : 1628712078101,
+    "duration" : 28394
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "653b1d23aff44603",
+  "name" : "test_registration",
+  "time" : {
+    "start" : 1628711900049,
+    "stop" : 1628711921984,
+    "duration" : 21935
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "921417e2b903558f",
+  "name" : "test_modify_article",
+  "time" : {
+    "start" : 1628711968169,
+    "stop" : 1628711995470,
+    "duration" : 27301
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a354e3eeb81b5a",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1628711921988,
+    "stop" : 1628711946780,
+    "duration" : 24792
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acb18da7a3f61e6d",
+  "name" : "test_delete_article",
+  "time" : {
+    "start" : 1628711995515,
+    "stop" : 1628712028873,
+    "duration" : 33358
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2cb08c96d2f4a3ee",
+  "name" : "test_pagination",
+  "time" : {
+    "start" : 1628712028877,
+    "stop" : 1628712049703,
+    "duration" : 20826
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "414d40d5ae6c75ed",
+  "name" : "test_cookies",
+  "time" : {
+    "start" : 1628711877522,
+    "stop" : 1628711900046,
+    "duration" : 22524
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5f365b854d41d1a1",
+  "name" : "test_lementes_feluletrol",
+  "time" : {
+    "start" : 1628711812236,
+    "stop" : 1628711845214,
+    "duration" : 32978
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
