@@ -34,6 +34,6 @@ def test_modify_article():
     # Assert: a blogbejegyzés body-ja megváltozott
     article_body_refilled = browser.find_element_by_css_selector('div[class="col-xs-12"] div p')
     assert article_body_refilled.text == "New body comes here."
-    # print("The article's body has been changed!")
+    # print("The article's body has been changed.")
 
     browser.quit()
