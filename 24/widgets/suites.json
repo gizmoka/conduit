@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "fcfe970ddd9021dcedddf034c326e02c",
+    "name" : "test-conduit",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 12
+    }
+  } ]
+}

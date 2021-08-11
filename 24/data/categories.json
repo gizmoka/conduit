@@ -1,0 +1,64 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"p\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_data_input_from_file",
+        "uid" : "b1ce9d2e77781df2",
+        "parentUid" : "f7081446cc02c5ab9ad9bb1e3d24b405",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628697067897,
+          "stop" : 1628697106822,
+          "duration" : 38925
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f7081446cc02c5ab9ad9bb1e3d24b405"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: Chrome failed to start: exited abnormally.\n  (unknown error: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)",
+      "children" : [ {
+        "name" : "test_registration",
+        "uid" : "70f09ff15b90a27",
+        "parentUid" : "e4a7d37349393b5a9e33d7e741170037",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628697192728,
+          "stop" : 1628697195369,
+          "duration" : 2641
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4a7d37349393b5a9e33d7e741170037"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Yar Pirate I...mast yardarm.' == 'New body comes here.'\n  - New body comes here.\n  + Yar Pirate Ipsum. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.",
+      "children" : [ {
+        "name" : "test_modify_article",
+        "uid" : "5183d12baec46a62",
+        "parentUid" : "7bc47fb95f3f2856e080451ecaca0f1a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628697241392,
+          "stop" : 1628697268685,
+          "duration" : 27293
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7bc47fb95f3f2856e080451ecaca0f1a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
