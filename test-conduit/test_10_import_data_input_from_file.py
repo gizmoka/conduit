@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def test_data_input_from_file():
     browser_options = Options()
-    browser_options.headless = True
+    browser_options.headless = False
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
     URL = "http://conduitapp.progmasters.hu:1667/#/"
     browser.get(URL)
@@ -40,8 +40,12 @@ def test_data_input_from_file():
             article_body.send_keys(row[2])
             article_tag.send_keys(row[3])
 
+            publish_article_button = browser.find_element_by_css_selector('button[type="submit"]')
+            publish_article_button.click()
+
             # Assert: blogpost feltöltésre került, megjelenik
-            assert browser.find_element_by_tag_name("p").text == row[2]
+            article_body_new = browser.find_element_by_css_selector("div[class='col-xs-12'] div p")
+            assert article_body_new.text == row[2]
             # print("Importing data from a csv file was successful.")
 
     bp_file.close()
