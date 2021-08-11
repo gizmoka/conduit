@@ -1,5 +1,4 @@
 import time
-
 import pytest
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
@@ -17,17 +16,17 @@ def test_logout():
 
     # Előfeltételek
     accepting_cookies(browser)
-    # conduit_registration(browser)
     conduit_login(browser)
     time.sleep(2)
-    # TC10: Kijelentkezés
+
+    # ~ ~ ~ ~ ~ TC-11: KIJELENTKEZÉS ~ ~ ~ ~ ~ #
     logout_link = browser.find_element_by_xpath("//a[@active-class='active']")
     logout_link.click()
 
-    # assert: a logout gomb már nem található az oldalon
+    # Assert: a logout gomb már nem található az oldalon
     with pytest.raises(NoSuchElementException):
         browser.find_element_by_xpath("//a[@active-class='active']")
-    print("Log out link is no more available. So, you have succesfully logged out from this website.\nHave a nice day! ")
+    # print("Log out link is no more available. So, you have succesfully logged out from this website.\nHave a nice day! ")
 
     browser.quit()
 

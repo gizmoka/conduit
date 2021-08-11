@@ -16,7 +16,7 @@ def test_registration():
     # Előfeltételek
     accepting_cookies(browser)
 
-    # TC3: Regisztráció
+    # ~ ~ ~ ~ ~ TC-03: REGISZTRÁCIÓ ~ ~ ~ ~ ~ #
     register_button = browser.find_element_by_xpath('//a[@href="#/register"]')
     time.sleep(2)
     register_button.click()
@@ -36,9 +36,10 @@ def test_registration():
     sending_data.click()
     time.sleep(3)
 
+    # Assert: sikeres regisztráció üzenet
     successful_registration_message = browser.find_element_by_css_selector('div.swal-text').text
     assert successful_registration_message == "Your registration was successful!"
     browser.find_element_by_xpath("//button[normalize-space()='OK']").click()
-    print("Congrats! Your registration has been successful.")
+    # print("Congrats! Your registration has been successful.")
 
     browser.quit()

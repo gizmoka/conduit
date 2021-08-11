@@ -4,6 +4,7 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from data import accepting_cookies
+import time
 
 def test_cookies():
     browser_options = Options()
@@ -13,14 +14,15 @@ def test_cookies():
     browser.get(URL)
     browser.implicitly_wait(10)
 
-    # TC02: Cookies policy elfogadása
+    # ~ ~ ~ ~ ~ TC-02: COOKIES POLICY ELFOGADÁSA ~ ~ ~ ~ ~ #
     accepting_cookies(browser)
+    time.sleep (2)
 
-    # Nem maradt megnyomható gomb az oldalon, miután elfogadtuk a cookies policy-t, erre assertezni
-    # assert browser.find_elements_by_xpath("//button") == []
-    # with pytest.raises(NoSuchElementException):
-    #     browser.find_element_by_xpath('//button')
+    # Assert: I accept! gomb nem található az oldalon
     with pytest.raises(NoSuchElementException):
-        browser.find_element_by_xpath("//a[contains(text(),'Log out')]")
-    print("Cookies policy buttons have disappeared from the homepage. So, I accept! button is working properly.")
+        browser.find_element_by_xpath(
+            '//button[@class="cookie__bar__buttons__button cookie__bar__buttons__button--accept"]')
+        # print("Cookies policy buttons have disappeared from the homepage. So, I accept! button is working properly.")
+
     browser.quit()
+

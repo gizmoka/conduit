@@ -14,20 +14,22 @@ def test_delete_article():
 
     # Előfeltételek:
     accepting_cookies(browser)
-    # conduit_registration(browser)
+    time.sleep(2)
     conduit_login(browser)
     time.sleep(2)
     create_new_article(browser)
 
-    # 1 blogpost törlése
+    # ~ ~ ~ ~ ~ TC-07: 1 BLOGPOSZT TÖRLÉSE ~ ~ ~ ~ ~ #
     delete_article_button = browser.find_element_by_css_selector('.btn.btn-outline-danger.btn-sm')
+    time.sleep(2)
     delete_article_button.click()
-    # url_before_deletion = "http://conduitapp.progmasters.hu:1667/#/articles/new-title"
-    url_after_deletion = "http://conduitapp.progmasters.hu:1667/#/"
     browser.refresh()
     time.sleep(7)
+
+    # Asssert: az új url megváltozott
+    url_after_deletion = "http://conduitapp.progmasters.hu:1667/#/articles/new-title"
     assert browser.current_url == url_after_deletion
-    print("Deleting this blogpost was a successful action.")
+    # print("Deleting this blogpost was a successful action. Congrats.")
 
     browser.quit()
 

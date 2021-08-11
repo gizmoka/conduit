@@ -11,8 +11,11 @@ def test_homepage():
     browser.get(URL)
     browser.implicitly_wait(10)
 
-    # TC0: Homepage megfelelően töltődött be
+    # ~ ~ ~ ~ ~ TC-01: HOMEPAGE BETÖLTÉSE ~ ~ ~ ~ ~ #
     h1_element = browser.find_element_by_tag_name("h1")
+
+    # Assert: a honlap betöltődött (h1 elem megjelent)
     assert h1_element.text == "conduit"
-    print('We are happy. The homepage has appeared.')
+    # print('We are happy. The homepage has appeared.')
+
     browser.quit()
