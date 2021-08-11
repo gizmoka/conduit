@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Aug 11 13:09:37 GMT 2021","Wed Aug 11 13:10:00 GMT 2021","23246","test-conduit","test_11_saving_data_into_file","","","","test_lementes_feluletrol",""
-"passed","Wed Aug 11 13:09:21 GMT 2021","Wed Aug 11 13:09:37 GMT 2021","15745","test-conduit","test_10_import_data_input_from_file","","","","test_data_input_from_file",""
