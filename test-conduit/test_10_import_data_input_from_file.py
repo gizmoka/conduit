@@ -15,29 +15,34 @@ def test_data_input_from_file():
 
     # Előfeltételek
     accepting_cookies(browser)
-    # conduit_registration(browser)
+    time.sleep(7)
     conduit_login(browser)
     time.sleep(2)
-    # TC4: Ismételt és sorozatos adatbevitel adatforrásból, 1 blogpost feltöltése betöltése txt fájlból
-    ## step1: new article-ra rákattintunk
+
+    # ~ ~ ~ ~ ~ TC-10: 1 BLOGPOSZT FELTÖLTÉSE FÁJLBÓL ~ ~ ~ ~ ~ #
+
+    ## Step1: a 'new article'-ra rákattintunk
     browser.find_element_by_css_selector("a[href='#/editor']").click()
 
-    ## step2: betölteni a blogpost.csv-ből soronként az adatokat a megfelelő input mezőbe
+    ## Step2: betöltjük a fájból soronként az adatokat a megfelelő input mezőbe
 
     with open('blogpost.csv', encoding='utf-8') as bp_file:
         csv_reader = csv.reader(bp_file, delimiter='/')
         for row in csv_reader:
-            article_title = browser.find_element_by_css_selector("input[placeholder='Article Title']").send_keys(row[0])
-            article_summary = browser.find_element_by_xpath('//input[starts-with(@placeholder,"What")]').send_keys(row[1])
-            article_body = browser.find_element_by_css_selector("textarea[placeholder='Write your article (in markdown)']").send_keys(row[2])
-            article_tag = browser.find_element_by_css_selector("input[placeholder='Enter tags']").send_keys(row[3])
-            browser.find_element_by_css_selector("button[type='submit']").click()
+            article_title = browser.find_element_by_css_selector("input[placeholder='Article Title']")
+            article_summary = browser.find_element_by_xpath('//input[starts-with(@placeholder,"What")]')
+            article_body = browser.find_element_by_css_selector(
+                "textarea[placeholder='Write your article (in markdown)']")
+            article_tag = browser.find_element_by_css_selector("input[placeholder='Enter tags']")
 
-            assert article_title == "An awesome title for my article"
-            assert article_summary == "The gist of this article"
-            assert article_body == "I am exploring the ins and outs of automation testing."
-            assert article_tag == "best tag ever"
-            print("Importing data from a csv file was successful.")
+            article_title.send_keys(row[0])
+            article_summary.send_keys(row[1])
+            article_body.send_keys(row[2])
+            article_tag.send_keys(row[3])
+
+            # Assert: blogpost feltöltésre került, megjelenik
+            assert browser.find_element_by_tag_name("p").text == row[2]
+            # print("Importing data from a csv file was successful.")
 
     bp_file.close()
 

@@ -15,17 +15,16 @@ def test_lementes_feluletrol():
 
     # Előfeltételek
     accepting_cookies(browser)
-    # conduit_registration(browser)
     conduit_login(browser)
     time.sleep(2)
-    # TC08: Adatok listázása, blogpostok listázása
 
-    # a saját blogpostokat megkeresem
-    ## step1: username-re rákattintunk a menübaron
+    # ~ ~ ~ ~ ~ TC-11: BLOGPOSZTOK LISTÁZÁSA (SAJÁT) ~ ~ ~ ~ ~ #
+
+    ## Step1: username-re rákattintunk a menübaron
     browser.find_element_by_xpath('//div[@class="container"]//ul/li[4]/a').click()
     time.sleep(5)
 
-    ## step2: Favorited Articles-re kattintok, utána My Articles-re (csak így működik)
+    ## Step2: a Favorited Articles-re kattintok, utána My Articles-re (így működik)
     browser.find_element_by_css_selector("a[href='#/@GumiBogyo/favorites']").click()
     browser.find_element_by_css_selector("a[href='#/@GumiBogyo/']").click()
     time.sleep(6)
@@ -35,14 +34,11 @@ def test_lementes_feluletrol():
     time.sleep(2)
     with open("one_of_my_articles.txt", "w", encoding='utf-8') as my_art:
         my_art.write(my_article_title_text + "\n" + my_article_body_text + "\n")
-        # my_art.write(my_article_title_text)
-        # my_art.write(my_article_body_text)
+
+        # Assert: a csv fájl nem üres
+        if os.stat("one_of_my_articles.txt").st_size == 0:
+            print('empty')
 
     my_art.close()
-
-    # assert: a csv fájl nem üres
-    if os.stat("one_of_my_articles.txt").st_size == 0:
-        print('empty')
-
 
     browser.quit()

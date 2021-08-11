@@ -15,12 +15,11 @@ def test_modify_article():
 
     # Előfeltételek:
     accepting_cookies(browser)
-    # conduit_registration(browser)
     conduit_login(browser)
     time.sleep(2)
     create_new_article(browser)
 
-    # TC06: Meglévő blogpost szerkesztése
+    # ~ ~ ~ ~ ~ TC-06: MEGLÉVŐ BLOGPOSZT MÓDOSÍTÁSA ~ ~ ~ ~ ~ #
     edit_article_link = browser.find_element_by_css_selector("a[href='#/editor/new-title")
     edit_article_link.click()
 
@@ -30,11 +29,12 @@ def test_modify_article():
 
     publish_article_button = browser.find_element_by_css_selector("button[type='submit']")
     publish_article_button.click()
-
     time.sleep(5)
+
+    # Assert: a blogbejegyzés body-ja megváltozott
     article_body_refilled = browser.find_element_by_css_selector('div[class="col-xs-12"] div p')
     assert article_body_refilled.text == "New body comes here."
-    print("The article's body has been changed.")
+    # print("The article's body has been changed.")
 
     browser.quit()
 
