@@ -5,9 +5,10 @@ from selenium import webdriver
 from datetime import datetime, timezone
 from data import accepting_cookies
 
+
 def test_registration():
     browser_options = Options()
-    browser_options.headless = False
+    browser_options.headless = True
     browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)
     URL = "http://conduitapp.progmasters.hu:1667/#/"
     browser.get(URL)
