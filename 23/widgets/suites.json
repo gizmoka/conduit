@@ -4,10 +4,10 @@
     "uid" : "fcfe970ddd9021dcedddf034c326e02c",
     "name" : "test-conduit",
     "statistic" : {
-      "failed" : 3,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 9,
+      "passed" : 10,
       "unknown" : 0,
       "total" : 12
     }

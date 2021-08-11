@@ -1,12 +1,12 @@
 {
-  "uid" : "f1616f4c2c0f321e",
-  "name" : "test_add_new_article",
-  "fullName" : "test-conduit.test_5_add_new_article#test_add_new_article",
-  "historyId" : "be7ff2d763c6a24ad92d49d86b02cacc",
+  "uid" : "34bea81cf64294dd",
+  "name" : "test_logout",
+  "fullName" : "test-conduit.test_12_logout#test_logout",
+  "historyId" : "551022491132620a38e2e745a2c4c597",
   "time" : {
-    "start" : 1628688610552,
-    "stop" : 1628688624991,
-    "duration" : 14439
+    "start" : 1628696200839,
+    "stop" : 1628696225759,
+    "duration" : 24920
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,21 +16,21 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "2e48b77b9a1c780f",
+      "uid" : "5306f8bcaa08f73e",
       "name" : "log",
-      "source" : "2e48b77b9a1c780f.txt",
+      "source" : "5306f8bcaa08f73e.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "b01b07ce33125e9f",
+      "uid" : "bcec253de9c6a4a5",
       "name" : "stdout",
-      "source" : "b01b07ce33125e9f.txt",
+      "source" : "bcec253de9c6a4a5.txt",
       "type" : "text/plain",
-      "size" : 94
+      "size" : 108
     }, {
-      "uid" : "2efa34ac49ad45b1",
+      "uid" : "f117aff6959db4f2",
       "name" : "stderr",
-      "source" : "2efa34ac49ad45b1.txt",
+      "source" : "f117aff6959db4f2.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
@@ -46,13 +46,13 @@
     "value" : "test-conduit"
   }, {
     "name" : "suite",
-    "value" : "test_5_add_new_article"
+    "value" : "test_12_logout"
   }, {
     "name" : "host",
-    "value" : "fv-az28-873"
+    "value" : "fv-az77-771"
   }, {
     "name" : "thread",
-    "value" : "3904-MainThread"
+    "value" : "3827-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -61,7 +61,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "test-conduit.test_5_add_new_article"
+    "value" : "test-conduit.test_12_logout"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -76,6 +76,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f1616f4c2c0f321e.json",
+  "source" : "34bea81cf64294dd.json",
   "parameterValues" : [ ]
 }

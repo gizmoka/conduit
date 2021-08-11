@@ -1,12 +1,12 @@
 {
-  "uid" : "7a10e89f774293ff",
-  "name" : "test_pagination",
-  "fullName" : "test-conduit.test_8_pagination#test_pagination",
-  "historyId" : "b869cb5ec894602b16f4683f89f5d3eb",
+  "uid" : "b8cb01f4f544efa0",
+  "name" : "test_lementes_feluletrol",
+  "fullName" : "test-conduit.test_11_saving_data_into_file#test_lementes_feluletrol",
+  "historyId" : "bf0d471a51d16e92416e0b1b3f729ecd",
   "time" : {
-    "start" : 1628688667986,
-    "stop" : 1628688682284,
-    "duration" : 14298
+    "start" : 1628696172337,
+    "stop" : 1628696200836,
+    "duration" : 28499
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,27 +16,21 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "16fcddeafdf6cccd",
+      "uid" : "ffab060cc9a932e8",
       "name" : "log",
-      "source" : "16fcddeafdf6cccd.txt",
+      "source" : "ffab060cc9a932e8.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "f0ba5f6fb2f01ca5",
-      "name" : "stdout",
-      "source" : "f0ba5f6fb2f01ca5.txt",
-      "type" : "text/plain",
-      "size" : 44
-    }, {
-      "uid" : "e1c3ce3ea84db078",
+      "uid" : "acb3e23606eb8ccc",
       "name" : "stderr",
-      "source" : "e1c3ce3ea84db078.txt",
+      "source" : "acb3e23606eb8ccc.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
-    "attachmentsCount" : 3,
+    "attachmentsCount" : 2,
     "shouldDisplayMessage" : false,
     "hasContent" : true
   },
@@ -46,13 +40,13 @@
     "value" : "test-conduit"
   }, {
     "name" : "suite",
-    "value" : "test_8_pagination"
+    "value" : "test_11_saving_data_into_file"
   }, {
     "name" : "host",
-    "value" : "fv-az28-873"
+    "value" : "fv-az77-771"
   }, {
     "name" : "thread",
-    "value" : "3904-MainThread"
+    "value" : "3827-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -61,7 +55,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "test-conduit.test_8_pagination"
+    "value" : "test-conduit.test_11_saving_data_into_file"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -76,6 +70,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7a10e89f774293ff.json",
+  "source" : "b8cb01f4f544efa0.json",
   "parameterValues" : [ ]
 }

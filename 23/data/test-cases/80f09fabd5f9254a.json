@@ -1,12 +1,12 @@
 {
-  "uid" : "13b102901f4cc51a",
-  "name" : "test_logout",
-  "fullName" : "test-conduit.test_12_logout#test_logout",
-  "historyId" : "551022491132620a38e2e745a2c4c597",
+  "uid" : "80f09fabd5f9254a",
+  "name" : "test_homepage",
+  "fullName" : "test-conduit.test_1_homepage#test_homepage",
+  "historyId" : "e50a2d9a0042327fbb7ebccd4b385fc9",
   "time" : {
-    "start" : 1628688543497,
-    "stop" : 1628688566850,
-    "duration" : 23353
+    "start" : 1628696225763,
+    "stop" : 1628696228212,
+    "duration" : 2449
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,21 +16,21 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "80a76c8aa13f39b2",
+      "uid" : "e7dfe79e1b40217f",
       "name" : "log",
-      "source" : "80a76c8aa13f39b2.txt",
+      "source" : "e7dfe79e1b40217f.txt",
       "type" : "text/plain",
       "size" : 344
     }, {
-      "uid" : "5b3a959b0e828325",
+      "uid" : "67adbc54669c584b",
       "name" : "stdout",
-      "source" : "5b3a959b0e828325.txt",
+      "source" : "67adbc54669c584b.txt",
       "type" : "text/plain",
-      "size" : 108
+      "size" : 41
     }, {
-      "uid" : "6b6c553d6d4a0e11",
+      "uid" : "f72bc62092b918b9",
       "name" : "stderr",
-      "source" : "6b6c553d6d4a0e11.txt",
+      "source" : "f72bc62092b918b9.txt",
       "type" : "text/plain",
       "size" : 215
     } ],
@@ -46,13 +46,13 @@
     "value" : "test-conduit"
   }, {
     "name" : "suite",
-    "value" : "test_12_logout"
+    "value" : "test_1_homepage"
   }, {
     "name" : "host",
-    "value" : "fv-az28-873"
+    "value" : "fv-az77-771"
   }, {
     "name" : "thread",
-    "value" : "3904-MainThread"
+    "value" : "3827-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -61,7 +61,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "test-conduit.test_12_logout"
+    "value" : "test-conduit.test_1_homepage"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -76,6 +76,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "13b102901f4cc51a.json",
+  "source" : "80f09fabd5f9254a.json",
   "parameterValues" : [ ]
 }

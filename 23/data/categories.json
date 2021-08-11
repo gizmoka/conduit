@@ -6,13 +6,13 @@
       "name" : "AssertionError: assert None == 'An awesome title for my article'",
       "children" : [ {
         "name" : "test_data_input_from_file",
-        "uid" : "4bd0641ac309de2",
+        "uid" : "9345178c3c0f44ce",
         "parentUid" : "3da9b737b0b5cc9d504b4fa088cdf142",
         "status" : "failed",
         "time" : {
-          "start" : 1628688462210,
-          "stop" : 1628688516028,
-          "duration" : 53818
+          "start" : 1628696155027,
+          "stop" : 1628696172293,
+          "duration" : 17266
         },
         "flaky" : false,
         "newFailed" : false,
@@ -20,33 +20,16 @@
       } ],
       "uid" : "3da9b737b0b5cc9d504b4fa088cdf142"
     }, {
-      "name" : "AssertionError: assert 'Yar Pirate I...mast yardarm.' == 'New body comes here.'\n  - New body comes here.\n  + Yar Pirate Ipsum. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.",
-      "children" : [ {
-        "name" : "test_modify_article",
-        "uid" : "f3215f233247ae1d",
-        "parentUid" : "7bc47fb95f3f2856e080451ecaca0f1a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1628688624994,
-          "stop" : 1628688644883,
-          "duration" : 19889
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "7bc47fb95f3f2856e080451ecaca0f1a"
-    }, {
       "name" : "AssertionError: assert 'http://condu...les/new-title' == 'http://condu...rs.hu:1667/#/'\n  - http://conduitapp.progmasters.hu:1667/#/\n  + http://conduitapp.progmasters.hu:1667/#/articles/new-title\n  ?                                         ++++++++++++++++++",
       "children" : [ {
         "name" : "test_delete_article",
-        "uid" : "dab9affc339f54e9",
+        "uid" : "b928a9a56763f06",
         "parentUid" : "df961c04e4e87d2c48ffce9a07ba03f6",
         "status" : "failed",
         "time" : {
-          "start" : 1628688644889,
-          "stop" : 1628688667927,
-          "duration" : 23038
+          "start" : 1628696309763,
+          "stop" : 1628696333135,
+          "duration" : 23372
         },
         "flaky" : false,
         "newFailed" : false,
