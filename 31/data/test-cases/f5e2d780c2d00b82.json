@@ -1,0 +1,83 @@
+{
+  "uid" : "f5e2d780c2d00b82",
+  "name" : "test_modify_article",
+  "fullName" : "test-conduit.test_6_modify_article#test_modify_article",
+  "historyId" : "6f754c797fb67ecc2d75f4b6b0d6a0bc",
+  "time" : {
+    "start" : 1628718197269,
+    "stop" : 1628718223687,
+    "duration" : 26418
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'Yar Pirate I...mast yardarm.' == 'New body comes here.'\n  - New body comes here.\n  + Yar Pirate Ipsum. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.",
+  "statusTrace" : "def test_modify_article():\n        browser_options = Options()\n        browser_options.headless = True\n        browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        URL = \"http://conduitapp.progmasters.hu:1667/#/\"\n        browser.get(URL)\n        browser.implicitly_wait(10)\n    \n        # Előfeltételek:\n        accepting_cookies(browser)\n        conduit_login(browser)\n        time.sleep(2)\n        create_new_article(browser)\n    \n        # ~ ~ ~ ~ ~ TC-06: MEGLÉVŐ BLOGPOSZT MÓDOSÍTÁSA ~ ~ ~ ~ ~ #\n        edit_article_link = browser.find_element_by_css_selector(\"a[href='#/editor/new-title\")\n        edit_article_link.click()\n    \n        article_body_edited = browser.find_element_by_xpath('//textarea[@placeholder=\"Write your article (in markdown)\"]')\n        article_body_edited.clear()\n        article_body_edited.send_keys(\"New body comes here.\")\n    \n        publish_article_button = browser.find_element_by_css_selector(\"button[type='submit']\")\n        publish_article_button.click()\n        time.sleep(5)\n    \n        # Assert: a blogbejegyzés body-ja megváltozott\n        article_body_refilled = browser.find_element_by_css_selector('div[class=\"col-xs-12\"] div p')\n>       assert article_body_refilled.text == \"New body comes here.\"\nE       AssertionError: assert 'Yar Pirate I...mast yardarm.' == 'New body comes here.'\nE         - New body comes here.\nE         + Yar Pirate Ipsum. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.\n\ntest-conduit/test_6_modify_article.py:36: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'Yar Pirate I...mast yardarm.' == 'New body comes here.'\n  - New body comes here.\n  + Yar Pirate Ipsum. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.",
+    "statusTrace" : "def test_modify_article():\n        browser_options = Options()\n        browser_options.headless = True\n        browser = webdriver.Chrome(ChromeDriverManager().install(), options=browser_options)\n        URL = \"http://conduitapp.progmasters.hu:1667/#/\"\n        browser.get(URL)\n        browser.implicitly_wait(10)\n    \n        # Előfeltételek:\n        accepting_cookies(browser)\n        conduit_login(browser)\n        time.sleep(2)\n        create_new_article(browser)\n    \n        # ~ ~ ~ ~ ~ TC-06: MEGLÉVŐ BLOGPOSZT MÓDOSÍTÁSA ~ ~ ~ ~ ~ #\n        edit_article_link = browser.find_element_by_css_selector(\"a[href='#/editor/new-title\")\n        edit_article_link.click()\n    \n        article_body_edited = browser.find_element_by_xpath('//textarea[@placeholder=\"Write your article (in markdown)\"]')\n        article_body_edited.clear()\n        article_body_edited.send_keys(\"New body comes here.\")\n    \n        publish_article_button = browser.find_element_by_css_selector(\"button[type='submit']\")\n        publish_article_button.click()\n        time.sleep(5)\n    \n        # Assert: a blogbejegyzés body-ja megváltozott\n        article_body_refilled = browser.find_element_by_css_selector('div[class=\"col-xs-12\"] div p')\n>       assert article_body_refilled.text == \"New body comes here.\"\nE       AssertionError: assert 'Yar Pirate I...mast yardarm.' == 'New body comes here.'\nE         - New body comes here.\nE         + Yar Pirate Ipsum. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.\n\ntest-conduit/test_6_modify_article.py:36: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "93891b01aed600f4",
+      "name" : "log",
+      "source" : "93891b01aed600f4.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "664a738badf35dc3",
+      "name" : "stderr",
+      "source" : "664a738badf35dc3.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test-conduit"
+  }, {
+    "name" : "suite",
+    "value" : "test_6_modify_article"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-553"
+  }, {
+    "name" : "thread",
+    "value" : "3836-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test-conduit.test_6_modify_article"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f5e2d780c2d00b82.json",
+  "parameterValues" : [ ]
+}

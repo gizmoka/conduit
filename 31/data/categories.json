@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Yar Pirate I...mast yardarm.' == 'New body comes here.'\n  - New body comes here.\n  + Yar Pirate Ipsum. Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm.",
+      "children" : [ {
+        "name" : "test_modify_article",
+        "uid" : "f5e2d780c2d00b82",
+        "parentUid" : "7bc47fb95f3f2856e080451ecaca0f1a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628718197269,
+          "stop" : 1628718223687,
+          "duration" : 26418
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7bc47fb95f3f2856e080451ecaca0f1a"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
