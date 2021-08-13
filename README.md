@@ -52,6 +52,10 @@ Navigate to `localhost:1667`
 - [x] Vue (built with webpack using Vue Single File Components)
 - [ ] Cypress
 
+# The hosted version
+
+If you are not using this docker setup. You can visit the hosted version: http://conduitapp.progmasters.hu:1667/#/
+
 # Frontend login
 
 There are a total of 100 users, with each user having the same password. Say we
